@@ -1001,7 +1001,7 @@ welcome
 }
 .indiimg{
   padding: 10px;
-  width: 450px;
+  width: 100%;
 }
 
 .input-form{
@@ -1551,7 +1551,6 @@ pricing
 .pricing-item .pricing-header {
   border-bottom: 1px solid #E2EBFF;
   text-align: center;
-  height: 130px;
   display: block;
   position: relative;
 }
