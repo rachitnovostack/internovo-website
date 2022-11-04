@@ -715,7 +715,6 @@ header
 }
 @media (max-width: 991px) {
   .header-area {
-    background: #fff;
     height: 80px;
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   }
@@ -985,7 +984,7 @@ welcome
 }
 
 .banner {
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.95)), url('../images/business.jpg');
   background-size: cover;
   background-position: bottom center;

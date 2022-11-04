@@ -715,7 +715,6 @@ header
 }
 @media (max-width: 991px) {
   .header-area {
-    background: #fff;
     height: 80px;
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   }
@@ -3008,7 +3007,7 @@ preloader
   justify-content: space-around;
   align-items: flex-start;
   flex-direction: column;
-  padding: 10% 2%;
+  padding: 130px 20px 100px;
 }
 
 .banner-content span, 

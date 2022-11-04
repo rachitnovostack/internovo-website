@@ -163,8 +163,6 @@
 
 	// Navbar Scroll Set White Background Function
 	function scrollNavBar() {
-		var width = $(window).width();
-		if(width > 991) {
 			var scroll = $(window).scrollTop();
 			if (scroll >= 30) {
 				$(".header-area").addClass("header-sticky");
@@ -173,7 +171,6 @@
 				$(".header-area").removeClass("header-sticky");
 				$("#sitelogo").attr("src","assets/images/light-logo.png");
 			}
-		}
 	}
 
 
