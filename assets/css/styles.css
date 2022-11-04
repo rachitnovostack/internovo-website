@@ -394,7 +394,6 @@ header
   left: 0px;
   right: 0px;
   z-index: 100;
-  height: 100px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -402,7 +401,6 @@ header
 }
 .header-area .main-nav .logo {
   float: left;
-  margin-top: 30px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -416,7 +414,6 @@ header
 }
 .header-area .main-nav .nav {
   float: right;
-  margin-top: 27px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -438,8 +435,6 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  height: 40px;
-  line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
 }
@@ -638,15 +633,9 @@ header
 }
 .header-area.header-sticky {
   background: #fff;
-  height: 80px;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
 }
-.header-area.header-sticky .logo {
-  margin-top: 22px;
-}
-.header-area.header-sticky .nav {
-  margin-top: 21px !important;
-}
+
 .header-area.header-sticky .nav li a {
   color: #3B566E;
 }
@@ -700,7 +689,11 @@ header
 .header-area.header-white .nav li.submenu:after {
   color: #3B566E;
 }
-
+@media (min-width:991px) {
+  .header-area .main-nav .nav {
+    padding: 28px 0 0;
+  }
+}
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
     padding-left: 12px;
@@ -737,6 +730,7 @@ header
   .header-area .main-nav {
     overflow: hidden;
   }
+
   .header-area .main-nav .nav {
     float: none;
     width: 100%;
@@ -992,7 +986,8 @@ welcome
 }
 
 .banner h1 {
-  margin: 30px 0px 60px 0px;
+  margin: 1px 0px 40px 0px;
+  font-weight: 500 !important;
 }
 .banner p{
   text-align: center;
@@ -2837,3 +2832,8 @@ preloader
 }
 
 
+@media (max-width:500px) {
+  .banner{
+    padding:5% 16px ;
+  }
+}

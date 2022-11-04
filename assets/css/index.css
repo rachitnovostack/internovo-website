@@ -394,7 +394,6 @@ header
   left: 0px;
   right: 0px;
   z-index: 100;
-  height: 100px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -402,7 +401,7 @@ header
 }
 .header-area .main-nav .logo {
   float: left;
-  margin-top: 30px;
+  margin-top: 22px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -416,7 +415,7 @@ header
 }
 .header-area .main-nav .nav {
   float: right;
-  margin-top: 27px;
+  height: 100%;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -438,8 +437,6 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  height: 40px;
-  line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
 }
@@ -638,15 +635,10 @@ header
 }
 .header-area.header-sticky {
   background: #fff;
-  height: 80px;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
 }
-.header-area.header-sticky .logo {
-  margin-top: 22px;
-}
-.header-area.header-sticky .nav {
-  margin-top: 21px !important;
-}
+
+
 .header-area.header-sticky .nav li a {
   color: #3B566E;
 }
@@ -3007,7 +2999,7 @@ preloader
   justify-content: space-around;
   align-items: flex-start;
   flex-direction: column;
-  padding: 130px 20px 100px;
+  padding: 120px 20px 30px;
 }
 
 .banner-content span, 
@@ -3020,7 +3012,7 @@ preloader
 
 .banner-content span {
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .banner-content h1 {
@@ -3029,7 +3021,7 @@ preloader
 }
 
 .banner-content p {
-  font-size: 1.6rem;
+  font-size: 1.45rem;
 }
 
 .profile-card {
@@ -3053,3 +3045,49 @@ preloader
   border-radius: 24%;
   background: white;
 } */
+
+@media (max-width:756px) {
+  .banner-content h1{
+     font-size: 2.7rem;    
+  } 
+  .banner-content p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width:456px) {
+  .banner-content h1{
+     font-size: 2.1rem;
+     margin-bottom: 30px;    
+  } 
+  .banner-content span{
+    font-size: 1rem;
+  }
+  .banner-content p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width:361px) {
+  .banner-content h1{
+     font-size: 1.7rem;
+     margin-bottom: 30px;    
+  } 
+  .banner-content span{
+    font-size: 0.9rem;
+  }
+  .banner-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:303px) {
+  .banner-content h1{
+     font-size: 1.5rem;
+     margin-bottom: 20px;    
+  } 
+  .banner-content span{
+    font-size: 0.88rem;
+  }
+  .banner-content p {
+    font-size: 0.94rem;
+  }
+}
