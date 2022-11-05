@@ -195,6 +195,7 @@ body {
 }
 .left-text p {
   margin-bottom: 16px;
+  text-align: justify;
 }
 .left-text p.dark {
   color: #3B566E;
