@@ -1567,8 +1567,14 @@ pricing
 }
 .pricing-item .pricing-body .price-wrapper {
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.pricing-item .pricing-body .price-wrapper h2{
+  font-size: 1.6rem !important;
+}
+#products{
+  padding-top: 40px;
 }
 .pricing-item .pricing-body .price-wrapper .currency {
   height: 47px;
