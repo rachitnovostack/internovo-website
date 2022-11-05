@@ -3059,6 +3059,21 @@ preloader
     font-size: 1.2rem;
   }
 }
+/* cv-upload-form */
+@media (max-width:550px) {
+  .cv-upload-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cv-upload-form input{
+    width: 100%;
+  }
+  .cv-upload-form button{
+    margin-top: 1.4rem;
+
+  }
+}
 @media (max-width:456px) {
   .banner-content h1{
      font-size: 2.1rem;
