@@ -194,7 +194,7 @@ body {
   color: #C7E5FF;
 }
 .left-text p {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 .left-text p.dark {
   color: #3B566E;
@@ -1562,7 +1562,7 @@ pricing
   display: block;
 }
 .pricing-item .pricing-body {
-  margin-bottom: 40px;
+  margin-bottom: 18px;
   padding: 20px 30px;
 }
 .pricing-item .pricing-body .price-wrapper {
