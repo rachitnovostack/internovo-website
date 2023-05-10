@@ -3033,6 +3033,8 @@ preloader
 .profile-card {
   max-width: 900px;
   margin: 0px auto;
+  align-items: flex-start;
+  
 }
 
 .profilepic {
