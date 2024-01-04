@@ -1001,11 +1001,22 @@ welcome
 }
 .indiimg{
   padding: 10px;
-  width: 260px;
+  width: 250px;
 }
-
+.indibook-img{
+  padding: 20px;
+  width: 250px;
+}
 .input-form{
  text-align: center;
+ padding: 30px 50px;
+ border-radius: 8px;
+ background: #fcfcfc;
+ width: fit-content;
+ box-shadow: 15px 15px 20px #eee;
+ margin: 0px auto;
+ margin-bottom: 80px;
+
 }
 .col-lg-12 p{
 justify-items: center;
@@ -1517,7 +1528,7 @@ pricing
 --------------------------------------------- 
 */
 .pricing-item {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   overflow: hidden;
@@ -2563,10 +2574,15 @@ contact
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
   z-index: 1;
 }
+.map-canvas{
+  border: 0;
+}
 .contact .map-wrapper .map-canvas {
   width: 100%;
   height: 100%;
 }
+
+
 .contact .contact-info {
   position: absolute;
   z-index: 2;
