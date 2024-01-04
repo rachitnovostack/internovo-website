@@ -1,0 +1,5 @@
+User-agent: *
+Allow: https://internovo.in/
+Sitemap: https://internovo.in/
+Disallow: /private/
+Disallow: /restricted-page.html
