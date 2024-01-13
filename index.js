@@ -26,12 +26,12 @@ $(window).scroll(function() {
 
 // Smooth scroll to top when the button is clicked
 $scrollToTopBtn.click(function() {
-  $('html, body').animate({ scrollTop: 0 }, 1000); // Adjust the speed (in milliseconds) as needed
+  $('html, body').animate({ scrollTop: 0 }, 2000); // Adjust the speed (in milliseconds) as needed
 });
 });
 
 
-
+// Navbar scroll
   $(document).ready(function() {
       // Add smooth scrolling to all links
       $("a").on('click', function(event) {
