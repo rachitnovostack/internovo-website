@@ -1,7 +1,6 @@
 html{
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -41,6 +40,8 @@ body {
 }
 
 
+
+
 @keyframes fadeInUp {
 0% {
 
@@ -60,6 +61,11 @@ body {
 /* .doc{
 animation: 2s fadeInUp ;
 } */
+
+
+
+
+
 
 
 /* Navbar */
@@ -295,12 +301,15 @@ header {
     /* text-indent: 20%; */
     font-size: small;
     line-height: 1.5rem;
+    padding: 1rem;
+
 
 }
 
 .founder-social img {
     width: 3rem;
 }
+
 
 /* Product Section */
 
