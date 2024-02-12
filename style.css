@@ -64,6 +64,16 @@ animation: 2s fadeInUp ;
 
 
 
+#product-section{
+    padding-top: 30px;
+}
+
+#founder-section{
+    padding-top: 30px;
+}
+#contact{
+    padding-top: 30px;
+}
 
 
 
@@ -72,10 +82,11 @@ animation: 2s fadeInUp ;
 header {
     padding: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background: transparent;
-    position: relative;
+    background: white;
+    position: fixed;
+    width: 100%;
     z-index: 1000;
 }
 
@@ -127,11 +138,14 @@ header {
   }
 
 
-.nav-toggle {
+.nav-toggle-bar {
     cursor: pointer;
     display: none;
 }
-
+.nav-toggle-x {
+    cursor: pointer;
+    display: none;
+}
 
 
 
@@ -144,12 +158,33 @@ header {
         left: 0;
         width: 100%;
         background: white;
+        animation: fadeIn 0.5s ease-out; /* Apply the animation */
     }
 
     .nav-link-box ul.active {
         display: flex;
     }
 
+    .nav-toggle-bar {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 100px;
+    }
+
+    .nav-toggle-X {
+        display: none;
+    }
+    .nav-toggle-bar.on {
+        display: none;
+    }
+
+    .nav-toggle-x.on {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 100px;
+    }
     .nav-link-box ul a {
         margin: 0;
         padding: 1rem;
@@ -158,43 +193,43 @@ header {
         cursor: pointer;
         font-size: 1rem;
         text-decoration: none;
-        color: #000000;
+        color: black;
         position: relative;
     }
 
-      
-      .nav-link-box ul a::before {
-          position: absolute;
-          width: 100%;
-          height: 0px;
-
-        }
-    
-    
-    .nav-toggle {
-        cursor: pointer;
-        display: none;
+    .nav-link-box ul a::before {
+        position: absolute;
+        width: 100%;
+        height: 0px;
     }
-    
 
-    .nav-toggle {
-        display: block;
+    /* Keyframes animation for fadeIn */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 }
+
 
 /* Hero Section */
 
 .hero-section {
     position: relative;
     height: 110vh;
+    top: 80px;
     overflow: hidden;
     display: flex;
     align-items: center;
     color: #ffffff;
+    /* color: #000000; */
 
 }
 
-/* Video Styles */
+
 #video-background {
     width: 100%;
     height: 100%;
@@ -207,12 +242,10 @@ header {
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 7%; /* Adjust this value to control the fade height */
+      height: 7%; 
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
       pointer-events: none;
     }
-
-/* Hero Text Styles */
 #hero-text {
     position: absolute;
     top: 50%;
@@ -312,6 +345,7 @@ header {
 
 
 /* Product Section */
+
 
 .explore-container {
     width: 100%;
