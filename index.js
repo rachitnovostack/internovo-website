@@ -2,13 +2,33 @@
 AOS.init();
 
 
+
 document.addEventListener("DOMContentLoaded", function () {
-    const navToggle = document.querySelector(".nav-toggle");
-    const navLinks = document.querySelector(".nav-link-box ul");
-    navToggle.addEventListener("click", function () {
-      navLinks.classList.toggle("active");
+  const navToggleBar = document.querySelector(".nav-toggle-bar");
+  const navToggleX = document.querySelector(".nav-toggle-x");
+  const navLinks = document.querySelector(".nav-link-box ul");
+
+  const toggleNav = () => {
+    navLinks.classList.toggle("active");
+    navToggleX.classList.toggle("on");
+    navToggleBar.classList.toggle("on");
+  };
+
+  navToggleBar.addEventListener("click", toggleNav);
+  navToggleX.addEventListener("click", toggleNav);
+
+  // Add event listener to each navigation link
+  const navLinksArray = document.querySelectorAll(".nav-link-box ul a");
+  navLinksArray.forEach((link) => {
+    link.addEventListener("click", () => {
+      // Close the navbar when a link is clicked
+      navLinks.classList.remove("active");
+      navToggleX.classList.remove("on");
+      navToggleBar.classList.remove("on");
     });
   });
+});
+
 
 
 

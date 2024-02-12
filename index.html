@@ -16,9 +16,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
 
   <!-- SEO -->
-  <meta name="description" content="Hexagon is a Agency, Startup and SaaS template by tempload." />
-  <meta name="keywords" content="hexagon, startup, saas, agency, development, html, template, tempload" />
-  <meta name="author" content="tempload" />
+  <meta name="keywords" content="ventures, internovo, fintech, decisions, financial, smart" />
+  <meta name="description" content="An Ideal combination of fin & tech, Internovo Ventures Pvt. Ltd. is a FinTech Company which is a JV between Interface Ventures and Novostack." />
+  <meta name="author" content="Internovo" />
   <link rel="canonical" href="https://internovo.in/">
   <script src="https://cdn.jsdelivr.net/gh/LieutenantPeacock/SmoothScroll@1.2.0/src/smoothscroll.min.js"
     integrity="sha384-UdJHYJK9eDBy7vML0TvJGlCpvrJhCuOPGTc7tHbA+jHEgCgjWpPbmMvmd/2bzdXU"
@@ -29,26 +29,30 @@
   <!-- Navbar Section -->
   <header>
     <div class="logo">
-      <img src="./img/dark-logo.png" alt="internovo logo" />
+      <a href="./">
+        <img src="./img/dark-logo.png" alt="internovo logo" />
+      </a>
     </div>
     <div class="nav-link-box">
-      <div class="nav-toggle">&#9776;</div>
-      <ul onclick="closeNavbar()">
+      <div class="nav-toggle-bar">&#9776;</div>
+      <div class="nav-toggle-x">X</div>
+      <ul>
         <a href="./index.html">Home</a>
         <a href="#founder-section">Founder's Corner</a>
         <a href="#product-section">Our Products</a>
         <a href="#career-section">Careers</a>
-        <a href="#contact" data-target="contact">Contact Us</a>
+        <a href="#contact">Contact Us</a>
       </ul>
     </div>
   </header>
   <!-- Hero Section -->
   <section class="hero-section">
-    <video id="video-background" autoplay loop muted>
-      <source src="./hero video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
 
-    </video>
+      <video id="video-background" autoplay loop muted>
+        <source src="./hero video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+  
+      </video>
     <div class="gradient-mask"></div>
 
     <!-- Hero Text -->
@@ -179,7 +183,7 @@
       <div class="explore-box" data-aos="flip-right" data-aos-duration="2000">
         <a href="https://indivest.in/" target="_blank">
           <div class="explore-img-2">
-            <img src="/img/indivest.png" alt="indibook-logo" />
+            <img src="/img/indivest.png" alt="indivest-logo" />
           </div>
           <hr />
           <h1>Making India Invest</h1>
@@ -259,9 +263,13 @@
       </div> -->
       <form class="form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="38d32a2f-2ae5-41da-ba40-ea090dceac3d">
+        <div class="input-group">
+          <label for='files'>Select files</label>
+          <input id='files' type="file" multiple>
+      </div>
 
-        <label for="text">Share your Google Link to CV and we will reach out to you.</label>
-        <input type="text" id="text" name="text" required placeholder="Paste your Link here" />
+        <!-- <label for="text">Share your Google Link to CV and we will reach out to you.</label>
+        <input type="text" id="text" name="text" required placeholder="Paste your Link here" /> -->
 
         <button type="submit" class="btn">
           Submit
@@ -355,6 +363,7 @@
         <!-- <video src="./img/illustrator.mp4" type="video/mp4" autoplay loop></video> -->
       </div>
       <div class="form-box">
+        <!-- Using WebForms -->
         <form action="https://api.web3forms.com/submit" method="POST" class="form">
           <input type="hidden" name="access_key" value="38d32a2f-2ae5-41da-ba40-ea090dceac3d">
           <label for="name">Name</label>
@@ -370,6 +379,22 @@
             <input type="submit" value="Submit" class="btn" />
           </div>
         </form>
+
+        <!-- Using Gmail -->
+        <!-- <form  class="form" id='form'>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your Name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your Email" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required rows="3" placeholder="Type your Message"></textarea>
+
+          <div class="btn-box">
+            <input type="submit" value="Submit" class="btn" />
+          </div>
+        </form> -->
       </div>
 
     </div>
