@@ -314,17 +314,24 @@ header {
     display: flex;
     filter: grayscale(100%);
     /* filter: brightness(80%); */
+    align-items: center;
     justify-content: center;
+
     overflow: hidden;
+
 }
 
 .founder-img img {
-    border-radius: 20px;
-    object-fit: cover;
-    width: 350px;
+    width: 400px;
     height: 350px;
-}
+    border-radius: 20px;
+    object-fit: contain;
+    object-position: center;
 
+}
+#karan{
+    transform: scale(1.06);
+}
 
 
 
